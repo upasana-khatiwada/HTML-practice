@@ -45,10 +45,57 @@
 
     </form>
     <h2>Text Areas</h2>
-    <form action=""></form>
-    <!-- Text area to create a multi line text input   -->
-    <label for = "notes">Additional Notes: </label>
-    <textarea name="" id="notes" rows="10" cols="30" >To preload in textarea</textarea>
+    <form action="">
+        <!-- Text area to create a multi line text input   -->
+        <label for="notes">Additional Notes: </label>
+        <textarea name="" id="notes" rows="10" cols="30">To preload in textarea</textarea>
+
+    </form>
+    <div>
+        <h2>Checkboxes</h2>
+        <form action="">
+            <input type="text" placeholder="username">
+            <label for="suscribe">Suscribe to newsletter</label>
+            <input type="checkbox" id="suscribe" name="suscribe">
+            <button>Submit</button>
+        </form>
+    </div>
+    <!-- Range input => Use type = "range " to create a range input (slider) -->
+    <h2>Range Input</h2>
+    <form action="">
+        <label for="volume">Select volume </label>
+        <input type="range" min="0" max="10" name="volume ">
+        <button>Submit</button>
+    </form>
+    <h2>Selects</h2>
+    <form action="">
+        <select name="skill Level" id="">
+            <option value="1">Level 1 - Beginner</option>
+            <option value="2">Level 2 -intermediate</option>
+            <option value="3">Level 3 - Expert</option>
+        </select>
+        <button>Submit</button>
+    </form>
+    <!-- Radio button are usualy grouped together Only one option can be selected -->
+
+    <h2>Radio Button</h2>
+    <form action="">
+        <fieldset >
+            <legend>Pick your shirt size: </legend>
+            <div>
+                <input type="radio" id="small" name="size" value="1">
+                <label for="small">Small</label>
+            </div>
+            <div>
+                <input type="radio" id="medium" name="size" value="2">
+                <label for="medium">Medium</label>
+            </div>
+            <div>
+                <input type="radio" id="large" name="size" value="3">
+                <label for="large">Large</label>
+            </div> <button>Submit</button>
+        </fieldset>
+    </form>
 
 
 
